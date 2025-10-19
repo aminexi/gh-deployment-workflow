@@ -19,3 +19,7 @@ https://aminexi.github.io/gh-deployment-workflow/
 1. Make a change to `index.html`.
 2. Commit and push to `main`.
 3. The workflow will run only if `index.html` was changed. Check the Actions tab and Pages status for deployment logs.
+
+
+
+https://roadmap.sh/projects/github-actions-deployment-workflow
