@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'index.html'
+      - 'public/index.html'
 
 jobs:
   deploy:
@@ -20,12 +20,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-     
       - name: Upload artifact for GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
-          path: index.html
-
+          path: ./public
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
