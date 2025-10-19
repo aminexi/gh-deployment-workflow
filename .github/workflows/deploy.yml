@@ -1,6 +1,5 @@
 name: Deploy index.html to GitHub Pages
 
-# Trigger only on pushes to main that include index.html in the changed paths
 on:
   push:
     branches:
@@ -12,7 +11,6 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
-    # Required permissions for Pages deployment
     permissions:
       contents: read
       pages: write
@@ -22,12 +20,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Upload the index.html (or a directory) as the artifact for Pages.
+     
       - name: Upload artifact for GitHub Pages
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
-          # path can be a single file or a folder. Here we upload just index.html
           path: index.html
 
+
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
