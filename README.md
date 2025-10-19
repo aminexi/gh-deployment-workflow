@@ -12,6 +12,8 @@ The workflow triggers on `push` to the `main` branch, but **only** if the `index
 ## Live site
 When deployed, the site will be available at:
 https://aminexi.github.io/gh-deployment-workflow/
+<img width="1477" height="446" alt="image" src="https://github.com/user-attachments/assets/cae503a9-705e-4142-9993-304620538276" />
+
 
 ## To test locally / push changes
 1. Make a change to `index.html`.
